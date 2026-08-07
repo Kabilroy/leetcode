@@ -3,5 +3,5 @@ select k.employee_id from Employees as k left join Salaries as l on k.employee_i
 union 
 select l.employee_id from Salaries as l 
 left join Employees as k on l.employee_id = k.employee_id
- where k.name is null
+ where name is null
  order by employee_id;
