@@ -23,19 +23,13 @@ class Solution {
                 }
             }
         }
-        System.out.println(li);
-        System.out.println(li1);
-          int arr[] = new int[li.size()+li1.size()];
-          int k = 0;
-          for(int i = 0;i<li.size();i++){
-             arr[k++] = li.get(i);
-          }
-          for(int i = 0;i<li1.size();i++)
-          {
-            arr[k++] = li1.get(i);
-          }
-          return arr;
-
+        
+         li.addAll(li1);
+         for(int i = 0;i<nums.length;i++)
+         {
+            nums[i] = li.get(i);
+         }
+           return nums;
         }
 
   
