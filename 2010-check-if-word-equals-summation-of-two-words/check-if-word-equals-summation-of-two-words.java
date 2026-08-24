@@ -18,9 +18,6 @@ class Solution {
         {
             c+=targetWord.charAt(k)-'a';
         }
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
         long a1 = Long.parseLong(a);
         long b1 = Long.parseLong(b);
         long c1 = Long.parseLong(c);
